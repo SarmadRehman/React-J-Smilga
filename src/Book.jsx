@@ -8,6 +8,7 @@ const Book = ({ img, title, author }) => {
     console.log(e.target);
     alert("hello world");
   };
+
   const complexExample = (author) => {
     console.log(author);
   };
@@ -15,7 +16,7 @@ const Book = ({ img, title, author }) => {
     <article
       className="book"
       onMouseOver={() => {
-        console.log(title);
+        alert(title);
       }}
     >
       <img src={img} alt="" />
